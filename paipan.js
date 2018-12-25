@@ -595,7 +595,7 @@ function paipan(){
 	    var ndf1 = -(yy % 4 == 0); //可被四整除
 		var ndf2 = ((yy % 400 == 0) - (yy % 100 == 0)) && (yy > 1582);
 	    var ndf = ndf1 + ndf2;
-	    var dom = 30 + ((Math.abs(mm - 7.5) + 0.5) % 2) - parseInt(mm == 2) * (2 + ndf);
+	    var dom = 30 + ((Math.abs(mm - 7.5) + 0.5) % 2) - (mm == 2) * (2 + ndf);
 	    if (dd <= 0 || dd > dom) {
 	        if (ndf == 0 && mm == 2 && dd == 29) { //此年無閏月
 	            
@@ -624,7 +624,7 @@ function paipan(){
 	    var ndf1 = -(yy % 4 == 0); //可被四整除
 	    var ndf2 = ((yy % 400 == 0) - (yy % 100 == 0)) && (yy > 1582);
 	    var ndf = ndf1 + ndf2;
-	    return 30 + ((Math.abs(mm - 7.5) + 0.5) % 2) - parseInt(mm == 2) * (2 + ndf);
+	    return 30 + ((Math.abs(mm - 7.5) + 0.5) % 2) - (mm == 2) * (2 + ndf);
 	}
 	/**
 	 * 获取农历某个月有多少天
