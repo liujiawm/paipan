@@ -1,5 +1,6 @@
-Javascript:
+# Javascript:
 
+```
 var p = new paipan();
 p.GetSolarDays(1980, 1); //获取公历某个月有多少天
 p.GetLunarDays(2017, 6, 1); //获取农历某个月有多少天,最后一个参数表示闰月
@@ -19,6 +20,7 @@ for(var i in jq){
 	var s = p.jq[(i+21)%24] + ":" + jq[i][0] + "年" + jq[i][1] + "月" + jq[i][2] + "日"+ jq[i][3] + "时"+ jq[i][4] + "分"+ jq[i][5] + "秒\n";
 	console.log(s);
 }
+```
+# PHP:
 
-PHP:
 略...
