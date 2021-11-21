@@ -1,4 +1,11 @@
-# 农历公历互转,八字排盘,星座,日历,支持从-1000到3000年间的排盘,二十四节气
+# 农历公历互转,八字排盘,星座,日历,支持从-1000到3000年间的排盘,二十四节气 #
+
+日历、中国农历、节气、干支、生肖、星座
+
+php版日历: v1 [https://github.com/liujiawm/php-calendar](https://github.com/liujiawm/php-calendar)
+
+golang版日历: v0 [https://github.com/liujiawm/gocalendar](https://github.com/liujiawm/gocalendar)
+
 
 我们现在所使用的以西元年月日表示的格里高利历(Gregorian calendar)
 儒略历(Julian calendar)，于公元前45年1月1日起执行的取代旧罗马历法的一种历法,以西元前4713年(或-4712年)1月1日12时为起点
@@ -8,7 +15,7 @@
 https://github.com/nozomi199/qimen_star (八字排盘,JS源码)
 http://www.bieyu.com/ (详尽的历法转换原理,JS源码)
 
-# PHP：
+## PHP: ##
 class.paipan.php
 与
 Paipan.php（php7）
@@ -19,7 +26,7 @@ Paipan.php（php7）
 
 ```
 
-# Javascript:
+## Javascript: ##
 ```
 var p = new paipan();
 p.GetSolarDays(1980, 1); //获取公历某个月有多少天
